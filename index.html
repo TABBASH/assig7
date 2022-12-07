@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Store</title>
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="mainbar">
+        <h1>Car Store</h1>
+
+        <div class="cart">
+            <i class="bi bi-cart2"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+
+    </div>
+
+    <div class="shop" id="shop">
+        <div class="item">
+            <img width="200" src="https://scdn.autoteiledirekt.de/catalog/categories/500x500/52.png?rev=94077835"
+                alt="">
+            <div class="details">
+                <h3>Air Filter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="price-quantity">
+                   <h2 id="cost">50</h2>
+                    <div class="buttons">
+                        <button class="minus" onclick="decrement(50)"> <i class="bi bi-dash-lg"></i> </button>
+                        <div class="quantity" id="50"> 0 </div>
+                        <button class="plus" onclick="increment(50)"> <i class="bi bi-plus-lg"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img width="200" src="https://scdn.autoteiledirekt.de/catalog/categories/500x500/53.png?rev=94077835"
+                alt="">
+            <div class="details">
+                <h3>Fuel Filter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="price-quantity">
+                    <h2 id="cost">40</h2>
+                    <div class="buttons">
+                        <button class="minus" onclick="decrement(40)"> <i class="bi bi-dash-lg"></i> </button>
+                        <div class="quantity" id="40"> 0 </div>
+                        <button class="plus" onclick="increment(40)"> <i class="bi bi-plus-lg"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img width="200" src="https://scdn.autoteiledirekt.de/catalog/categories/500x500/269.png?rev=94077835"
+                alt="">
+            <div class="details">
+                <h3>Car oil</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="price-quantity">
+                    <h2 id="cost">35</h2>
+                    <div class="buttons">
+                        <button class="minus" onclick="decrement(35)"> <i class="bi bi-dash-lg"></i> </button>
+                        <div class="quantity" id="35"> 0 </div>
+                        <button class="plus" onclick="increment(35)"> <i class="bi bi-plus-lg"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img width="200" src="https://scdn.autoteiledirekt.de/catalog/categories/500x500/16.png?rev=94077835"
+                alt="">
+            <div class="details">
+                <h3>Motor mount</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="price-quantity">
+                    <h2 id="cost">15</h2>
+                    <div class="buttons">
+                        <button class="minus" onclick="decrement(15)"> <i class="bi bi-dash-lg"></i> </button>
+                        <div class="quantity" id="15"> 0 </div>
+                        <button class="plus" onclick="increment(15)"> <i class="bi bi-plus-lg"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <h1>Total Price:</h1>
+
+        <h1> <div id="totalprice" class="totalprice">0</div> </h1>
+
+    </div>
+
+</body>
+
+</html>
